@@ -437,6 +437,4 @@ Full arguments for separate loader stages, RAM operations, diagnostics, physical
 
 ## License
 
-Licensed under the Apache License, Version 2.0; the full text is in [LICENSE](LICENSE). Copyright (C) 2026 Evarentha.
-
-Third-party components are not redistributed here. Linux builds link libusb 1.0 (LGPL-2.1-or-later) and OpenSSL Crypto (Apache-2.0) dynamically; Windows uses the system BCrypt provider. Each remains under its own license.
+Apache-2.0, Copyright (C) 2026 Evarentha. See [LICENSE](LICENSE).

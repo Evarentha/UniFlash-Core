@@ -437,6 +437,4 @@ $env:UNIFLASH_PERF = "1"
 
 ## 许可证
 
-本项目采用 Apache License 2.0，完整文本见 [LICENSE](LICENSE)。版权持有人为 Evarentha。
-
-本仓库不再分发第三方组件。Linux 构建动态链接 libusb 1.0（LGPL-2.1-or-later）和 OpenSSL Crypto（Apache-2.0）；Windows 使用系统 BCrypt。上述组件各自遵循其许可证。
+本项目以 Apache-2.0 许可发布，Copyright (C) 2026 Evarentha，完整文本见 [LICENSE](LICENSE)。
