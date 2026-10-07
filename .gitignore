@@ -1,0 +1,42 @@
+# CMake build trees, including every platform and debug variant.
+/build/
+/build-*/
+
+# Private notes, protocol research and audit history.
+/local-docs/
+
+# CMake local state, whatever directory the build tree uses.
+CMakeCache.txt
+CMakeFiles/
+/CMakeUserPresets.json
+/compile_commands.json
+
+# Objects, libraries and cross-compiled executables.
+/*.o
+/*.a
+/*.lib
+/*.exp
+/*.dll
+/*.exe
+/*.pdb
+
+# Output written when uniflash-core runs in this directory.
+/sessions/
+/misc-bcb-backup-*
+/cli-stages-*
+/partition-*.bin
+/log.txt
+.uniflash-*
+
+# Editor, IDE and tool caches.
+/.vs/
+/.idea/
+/.vscode/
+*.swp
+*~
+/node_modules/
+
+# Operating system metadata.
+.DS_Store
+Thumbs.db
+desktop.ini

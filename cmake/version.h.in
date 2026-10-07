@@ -1,0 +1,6 @@
+#pragma once
+#include <string_view>
+namespace uniflash {
+inline constexpr std::string_view VERSION = "@PROJECT_VERSION@";
+inline constexpr std::string_view BUILD_ID = "@UNIFLASH_BUILD_ID@";
+}
