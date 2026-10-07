@@ -31,7 +31,27 @@ public:
         if(mode>=0)da.insert(da.end(),{2,0,1,0,static_cast<uint8_t>(mode)});
         reply(0x96,da);
     }
-    void reply(uint16_t code,const Bytes& data={}) {replies.push_back(*protocol::BslCodec::encode_hdlc_chk(code,data,protocol::BslCodec::Chk::Add));}
+    // Device replies carry the BSP frm_chk value, not the host-command
+    // checksum: host commands must swap the trailer bytes for odd bodies so
+    // the device validates body+trailer as one buffer, while replies
+    // serialize the unswapped value. encode_hdlc_chk therefore cannot build
+    // an odd-length reply, and this fixture builds replies directly.
+    void reply(uint16_t code,const Bytes& data={}) {
+        Bytes body{0,static_cast<uint8_t>(code),static_cast<uint8_t>(data.size()>>8),static_cast<uint8_t>(data.size())};
+        body.insert(body.end(),data.begin(),data.end());
+        uint32_t sum=0;
+        for(size_t i=0;i<body.size();++i) sum += uint32_t(body[i]) << ((i%2==0)?8:0);
+        while(sum>>16) sum=(sum&65535)+(sum>>16);
+        const auto crc=static_cast<uint16_t>(~sum);
+        body.push_back(static_cast<uint8_t>(crc>>8));body.push_back(static_cast<uint8_t>(crc&255));
+        Bytes frame{0x7e};
+        for(auto b:body) {
+            if(b==0x7e || b==0x7d) {frame.push_back(0x7d);frame.push_back(static_cast<uint8_t>(b^0x20));}
+            else frame.push_back(b);
+        }
+        frame.push_back(0x7e);
+        replies.push_back(std::move(frame));
+    }
     std::expected<void,std::errc> bulk_write(std::span<const uint8_t> data,transport::Timeout,std::stop_token) override {
         if(raw) {
             if(data.size()>remaining)return std::unexpected(std::errc::bad_message);
