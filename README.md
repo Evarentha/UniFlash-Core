@@ -19,6 +19,8 @@ The program communicates through the BootROM / FDL download protocol. A typical 
 
 Backups include partition images, layout information, and SHA-256 manifests. Writes accept individual images, XML plans, image directories, and PAC packages. Dedicated NV operations restore primary/backup data or merge items according to PAC configuration; physical restoration uses temporary GPT aliases. Offline commands decrypt images, extract SCI1 payloads, and generate Sansa verification views.
 
+This guide describes version 1.0.0, tagged `v1.0.0`.
+
 ## Building
 
 ### Requirements
@@ -85,7 +87,7 @@ For an existing toolchain, omit the download step and set its installation path.
 cmake --install build --prefix /path/to/install
 ```
 
-Add `--config Release` when installing a Visual Studio build. Installation includes the CLI, static library, public headers, and CMake package configuration. Clients use:
+Add `--config Release` when installing a Visual Studio build. Installation includes the CLI, static library, public headers, the Apache-2.0 license text, and CMake package configuration. Clients use:
 
 ```cmake
 find_package(UniFlashCore CONFIG REQUIRED)
@@ -432,3 +434,9 @@ $env:UNIFLASH_PERF = "1"
 Aliases: `r` = `read`, `w` = `write`, `e` = `erase`, `?` = `help`.
 
 Full arguments for separate loader stages, RAM operations, diagnostics, physical restoration, repartitioning, factory modes, and offline image processing are in [docs/COMMANDS.md](docs/COMMANDS.md).
+
+## License
+
+Licensed under the Apache License, Version 2.0; the full text is in [LICENSE](LICENSE). Copyright (C) 2026 Evarentha.
+
+Third-party components are not redistributed here. Linux builds link libusb 1.0 (LGPL-2.1-or-later) and OpenSSL Crypto (Apache-2.0) dynamically; Windows uses the system BCrypt provider. Each remains under its own license.

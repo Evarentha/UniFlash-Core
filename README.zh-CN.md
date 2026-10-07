@@ -19,6 +19,8 @@ UniFlash-Core 是面向紫光展锐（Unisoc / Spreadtrum）设备的命令行�
 
 备份包含分区镜像、布局信息和 SHA-256 清单。写入支持独立镜像、XML 计划、镜像目录和 PAC 固件包。NV 专用操作可恢复主备数据，或按 PAC 配置合并条目；物理恢复通过临时 GPT 别名完成。离线命令提供镜像解密、SCI1 载荷提取和 Sansa 验签视图生成。
 
+本文档对应 1.0.0 版本，标记为 `v1.0.0`。
+
 ## 构建方法
 
 ### 环境要求
@@ -85,7 +87,7 @@ cmake --build build-win --parallel 4
 cmake --install build --prefix /path/to/install
 ```
 
-Visual Studio 构建安装时添加 `--config Release`。安装内容包含命令行程序、静态库、公共头文件和 CMake 包配置。客户端使用：
+Visual Studio 构建安装时添加 `--config Release`。安装内容包含命令行程序、静态库、公共头文件、Apache-2.0 许可证文本和 CMake 包配置。客户端使用：
 
 ```cmake
 find_package(UniFlashCore CONFIG REQUIRED)
@@ -432,3 +434,9 @@ $env:UNIFLASH_PERF = "1"
 简写：`r` = `read`，`w` = `write`，`e` = `erase`，`?` = `help`。
 
 分阶段加载、RAM 操作、诊断、物理恢复、重分区、工厂模式及离线镜像处理的完整参数见 [docs/COMMANDS.md](docs/COMMANDS.md)（英文）。
+
+## 许可证
+
+本项目采用 Apache License 2.0，完整文本见 [LICENSE](LICENSE)。版权持有人为 Evarentha。
+
+本仓库不再分发第三方组件。Linux 构建动态链接 libusb 1.0（LGPL-2.1-or-later）和 OpenSSL Crypto（Apache-2.0）；Windows 使用系统 BCrypt。上述组件各自遵循其许可证。
