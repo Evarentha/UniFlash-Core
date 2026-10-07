@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #include <uniflash/cli/line_editor.h>
 #include <uniflash/log.h>
 #include <uniflash/cli/signal.h>

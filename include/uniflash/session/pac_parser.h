@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #ifndef UNIFLASH_SESSION_PAC_PARSER_H
 #define UNIFLASH_SESSION_PAC_PARSER_H
 

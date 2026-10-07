@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #include <uniflash/session/pac_layout.h>
 #include <uniflash/log.h>
 using namespace uniflash;

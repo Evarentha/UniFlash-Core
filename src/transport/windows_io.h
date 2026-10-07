@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #ifndef UNIFLASH_WINDOWS_IO_H
 #define UNIFLASH_WINDOWS_IO_H
 

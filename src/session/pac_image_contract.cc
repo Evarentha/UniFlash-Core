@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #include <uniflash/session/pac_image_contract.h>
 #include <uniflash/session/boot_image.h>
 #include <uniflash/session/signed_image.h>

@@ -8,6 +8,7 @@
 #
 # Copyright (C) 2026 Evarentha
 # SPDX-License-Identifier: Apache-2.0
+
 if(NOT DEFINED BIN OR NOT DEFINED TEST_ROOT)
     message(FATAL_ERROR "BIN and TEST_ROOT are required")
 endif()

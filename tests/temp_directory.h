@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #ifndef UNIFLASH_TEST_TEMP_DIRECTORY_H
 #define UNIFLASH_TEST_TEMP_DIRECTORY_H
 #include <filesystem>

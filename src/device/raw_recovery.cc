@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #include <uniflash/device/sprd_device.h>
 namespace uniflash::device {
 std::expected<void,std::errc> SprdDevice::recover_raw_channel(bool end_already_sent,std::stop_token stop) {

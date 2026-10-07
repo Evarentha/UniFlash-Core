@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #include <uniflash/io/decrypt.h>
 #include <uniflash/io/output.h>
 #include <uniflash/io/sha256.h>

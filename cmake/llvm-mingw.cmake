@@ -8,6 +8,7 @@
 #
 # Copyright (C) 2026 Evarentha
 # SPDX-License-Identifier: Apache-2.0
+
 # cmake -S . -B build-win -G Ninja -DCMAKE_TOOLCHAIN_FILE=cmake/llvm-mingw.cmake
 # Set LLVM_MINGW_ROOT in the environment to an extracted LLVM-MinGW release.
 set(CMAKE_SYSTEM_NAME Windows)

@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #include <uniflash/protocol/ram_frame.h>
 #include "../src/device/loader_contract.h"
 #include <uniflash/log.h>

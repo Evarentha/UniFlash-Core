@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #pragma once
 #include <uniflash/session/raw_backup.h>
 #include <filesystem>

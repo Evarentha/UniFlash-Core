@@ -9,6 +9,7 @@
  * Copyright (C) 2026 Evarentha
  * SPDX-License-Identifier: Apache-2.0
  */
+
 #include <uniflash/session/operations.h>
 #include <uniflash/session/pac_services.h>
 #include <uniflash/session/journal.h>

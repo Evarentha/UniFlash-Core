@@ -9,6 +9,7 @@ worryzu <worryzu@gmail.com> @LinearTeam
 Copyright (C) 2026 Evarentha
 SPDX-License-Identifier: Apache-2.0
 -->
+
 # UniFlash-Core
 
 [English](README.md) | **简体中文**
