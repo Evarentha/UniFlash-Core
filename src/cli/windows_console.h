@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Windows Console
+ *
+ * Console mode and cursor helpers for the Windows shell.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #ifdef _WIN32
 #include <windows.h>

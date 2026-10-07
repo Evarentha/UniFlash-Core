@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / PAC Host Configuration
+ *
+ * Covers strict host configuration parsing and key handling.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/pac_config.h>
 #include <uniflash/io/authentication.h>
 #include <uniflash/io/sha256.h>

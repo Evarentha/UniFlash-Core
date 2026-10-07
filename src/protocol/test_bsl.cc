@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Protocol Self Test
+ *
+ * Offline protocol checks executed without any device.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/protocol/bsl.h>
 #include <uniflash/log.h>
 #include <uniflash/protocol/tests.h>

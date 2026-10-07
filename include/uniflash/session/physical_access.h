@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Physical Access
+ *
+ * Geometry-bound raw storage access for NV backup and verification.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/device/sprd_device.h>
 namespace uniflash::session {

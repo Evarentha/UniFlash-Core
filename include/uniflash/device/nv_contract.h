@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / NV Partition Contract
+ *
+ * Known NV primary and backup partition name pairs and their dialects.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <array>
 #include <string_view>

@@ -1,3 +1,13 @@
+#
+# UniFlash-Core Toolchain Fetch
+#
+# Downloads and verifies the pinned LLVM-MinGW release.
+#
+# Authors:
+# worryzu <worryzu@gmail.com> @LinearTeam
+#
+# Copyright (C) 2026 Evarentha
+# SPDX-License-Identifier: Apache-2.0
 # cmake -P cmake/fetch-llvm-mingw.cmake
 # Pin both origin and content. No compiler or target executable is run here.
 set(version 20260922)

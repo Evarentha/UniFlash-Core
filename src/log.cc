@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Diagnostic Output
+ *
+ * Severity formatting, progress lines and diagnostic trace output.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/log.h>
 #include <uniflash/platform.h>
 #include <uniflash/text.h>

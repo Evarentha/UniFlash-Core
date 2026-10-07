@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / PAC Execution
+ *
+ * Covers the prepare API surface and address-only NAND execution.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/operations.h>
 #include <uniflash/session/pac_services.h>
 #include <uniflash/session/pac_table.h>

@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PAC Image Contract
+ *
+ * Frozen image and loader policy preflight for PAC entries.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/io/image.h>
 #include <uniflash/device/profile.h>

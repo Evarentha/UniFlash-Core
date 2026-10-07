@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Rename Write
+ *
+ * Temporary GPT alias writes with per-partition commit and recovery.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/session/operation_result.h>
 #include <uniflash/session/gpt.h>

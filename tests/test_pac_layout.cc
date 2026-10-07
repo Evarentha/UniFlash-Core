@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / PAC Layout
+ *
+ * Covers geometry comparison and relocation planning.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/pac_layout.h>
 #include <uniflash/log.h>
 using namespace uniflash;

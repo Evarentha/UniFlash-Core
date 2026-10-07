@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Raw Backup
+ *
+ * User area and hardware boot backup with per-entry digests.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/raw_backup.h>
 #include <uniflash/session/device_error.h>
 #include <uniflash/session/sparse.h>

@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PAC Host Configuration
+ *
+ * Explicit host product configuration that is never read from a PAC.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/session/flash_plan.h>
 namespace uniflash::session {

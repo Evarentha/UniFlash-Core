@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Backup Bundle
+ *
+ * Manifest writing and reading with JSON escaping and digests.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/backup_bundle.h>
 #include <uniflash/session/journal.h>
 #include <uniflash/io/partition_filename.h>

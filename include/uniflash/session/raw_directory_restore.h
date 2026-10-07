@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Raw Directory Restore
+ *
+ * Whole-directory restore from a complete committed manifest.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/session/rename_write.h>
 #include <uniflash/session/physical_access.h>

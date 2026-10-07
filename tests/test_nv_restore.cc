@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / NV Restore
+ *
+ * Covers snapshot, merge, update and verified readback.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/nv_restore.h>
 #include <uniflash/session/operations.h>
 #include <uniflash/io/checksum.h>

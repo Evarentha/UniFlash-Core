@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / USB Transport
+ *
+ * Shared libusb context, enumeration records and transports.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #ifndef UNIFLASH_TRANSPORT_USB_H
 #define UNIFLASH_TRANSPORT_USB_H
 

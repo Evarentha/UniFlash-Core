@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / BSL Framing
+ *
+ * Frame constants, checksum phases and the BSL codec.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #ifndef UNIFLASH_PROTOCOL_BSL_H
 #define UNIFLASH_PROTOCOL_BSL_H
 

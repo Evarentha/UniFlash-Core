@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Range Readback
+ *
+ * Range comparison against prepared images.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/readback.h>
 #include <algorithm>
 #include <vector>

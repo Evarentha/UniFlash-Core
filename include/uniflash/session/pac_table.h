@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PAC SecBinPack Table
+ *
+ * XOR table decoding with structure and CRC verification.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <cstdint>
 #include <span>

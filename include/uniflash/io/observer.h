@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Progress Observer
+ *
+ * Callback wrapper that keeps presentation faults out of data operations.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <functional>
 #include <utility>

@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / SHA-256
+ *
+ * Compression function and digest finalisation.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/io/sha256.h>
 #include <algorithm>
 #include <bit>

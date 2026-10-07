@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / RAM Frames
+ *
+ * Covers frame encoding within payload and wire limits.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/protocol/ram_frame.h>
 #include "../src/device/loader_contract.h"
 #include <uniflash/log.h>

@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Operation Progress
+ *
+ * Maps operation step changes onto console progress lines.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/session/operations.h>
 #include <uniflash/log.h>

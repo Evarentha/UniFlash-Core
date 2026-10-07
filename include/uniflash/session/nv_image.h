@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / NV Image
+ *
+ * Item header, checksum width and representation rules for NV images.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <span>
 #include <vector>

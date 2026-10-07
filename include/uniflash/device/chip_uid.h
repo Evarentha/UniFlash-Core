@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Chip Identifier Formatting
+ *
+ * Presentation of chip UID wire payloads in their inspected encodings.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <algorithm>
 #include <span>

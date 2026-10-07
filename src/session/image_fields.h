@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Image Field Helpers
+ *
+ * Little-endian field access, range checks and hex formatting.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <cstdint>
 #include <span>

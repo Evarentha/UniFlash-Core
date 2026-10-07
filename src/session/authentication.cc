@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / R27 Authentication
+ *
+ * OpenSSL and BCrypt implementations of the R27 exchange.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/io/authentication.h>
 #include <uniflash/io/sha256.h>
 #include <fstream>

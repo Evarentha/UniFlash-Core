@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Windows Transport
+ *
+ * COM port enumeration and overlapped read and write transfers.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/transport/usb.h>
 #include <uniflash/platform.h>
 #include <uniflash/log.h>

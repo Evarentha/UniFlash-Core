@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Command Line Interface
+ *
+ * Argument dispatch, interactive shell, script mode and the landing summary.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/core.h>
 #include "cli/operation_progress.h"
 #include "cli/windows_console.h"

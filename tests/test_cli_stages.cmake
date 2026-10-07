@@ -1,3 +1,13 @@
+#
+# UniFlash-Core Test / CLI Stages
+#
+# Runs the CLI against staged loader files in a temporary home directory.
+#
+# Authors:
+# worryzu <worryzu@gmail.com> @LinearTeam
+#
+# Copyright (C) 2026 Evarentha
+# SPDX-License-Identifier: Apache-2.0
 if(NOT DEFINED BIN OR NOT DEFINED TEST_ROOT)
     message(FATAL_ERROR "BIN and TEST_ROOT are required")
 endif()

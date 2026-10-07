@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Image Preparation
+ *
+ * Snapshot creation, sparse indexing and checksum verification.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/io/image.h>
 #include <uniflash/io/sparse_index.h>
 #include <uniflash/io/sparse_format.h>

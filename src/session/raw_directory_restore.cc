@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Raw Directory Restore
+ *
+ * Manifest driven restore with alias transactions and aggregate readback.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/raw_directory_restore.h>
 #include <uniflash/session/journal.h>
 #include <uniflash/session/device_error.h>

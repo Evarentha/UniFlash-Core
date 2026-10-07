@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / BSL Session
+ *
+ * Framing, checksum phase and transaction validity over a transport.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 
 #include <uniflash/protocol/bsl.h>

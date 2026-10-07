@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / NV Image
+ *
+ * Covers item headers, checksums and word orders.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/nv_image.h>
 #include <uniflash/device/sprd_device.h>
 #include <deque>

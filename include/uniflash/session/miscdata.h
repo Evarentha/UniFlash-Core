@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Miscdata Inspection
+ *
+ * Serial parsing and the documented boot lock record heuristic.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <cstdint>
 #include <expected>

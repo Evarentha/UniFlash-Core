@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PAC Image Contract
+ *
+ * Mirrored boot targets, payload checks and loader policy limits.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/pac_image_contract.h>
 #include <uniflash/session/boot_image.h>
 #include <uniflash/session/signed_image.h>

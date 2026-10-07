@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / BSL Session
+ *
+ * Request and reply exchange, resynchronisation and session retirement.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/protocol/session.h>
 #include <algorithm>
 #include <uniflash/log.h>

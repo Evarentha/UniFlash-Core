@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Partition Table Build
+ *
+ * MBR and GPT table encoding from partition specifications.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/layout/partition_table.h>
 #include <uniflash/protocol/bsl.h>
 #include <uniflash/protocol/partition_name.h>

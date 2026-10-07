@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Interactive Link Check
+ *
+ * Internal FDL2 liveness exchange used only by the interactive shell.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #ifndef UNIFLASH_CLI_PING_H
 #define UNIFLASH_CLI_PING_H
 

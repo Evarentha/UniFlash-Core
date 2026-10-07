@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PAC Parsing
+ *
+ * Structured and flat PAC parsing with bounded XML handling.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/pac_parser.h>
 #include <uniflash/protocol/bsl.h>
 #include <uniflash/platform.h>

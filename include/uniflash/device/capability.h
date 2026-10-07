@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Capability Resolution
+ *
+ * Tri-state capability tracking that keeps offline facts and runtime refusals separate.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 namespace uniflash::device {
 enum class Capability { Unknown, Supported, Unsupported };

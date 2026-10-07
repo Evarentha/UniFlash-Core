@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / R27 Authentication
+ *
+ * RSA2048 OAEP-SHA1 challenge response for the R27 scheme.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/auth/types.h>
 #include <filesystem>

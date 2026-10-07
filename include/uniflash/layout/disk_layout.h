@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Disk Layout
+ *
+ * GPT header, partition entry and parsed layout structures.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/io/stream.h>
 #include <array>

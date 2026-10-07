@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PAC Layout Plan
+ *
+ * Geometry comparison and equal size region relocation planning.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/pac_layout.h>
 #include <algorithm>
 #include <set>

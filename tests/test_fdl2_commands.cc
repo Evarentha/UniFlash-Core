@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / FDL2 Commands
+ *
+ * Covers chip query caching, BCB staging and raw list fallback.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/device/sprd_device.h>
 #include <uniflash/session/pac_parser.h>
 #include <uniflash/cli/ping.h>

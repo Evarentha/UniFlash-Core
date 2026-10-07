@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / PC Tool Mode
+ *
+ * Covers mode parsing and confirmation frame decoding.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/protocol/bsl.h>
 #include <uniflash/protocol/pctool.h>
 

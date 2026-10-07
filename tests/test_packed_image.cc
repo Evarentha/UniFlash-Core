@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / Packed Images
+ *
+ * Covers SCI1 directory, modem range and verification view parsing.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/packed_image.h>
 #include <uniflash/io/sha256.h>
 #include "temp_directory.h"

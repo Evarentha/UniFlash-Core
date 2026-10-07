@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Transport Interface
+ *
+ * Byte channel contract with framing, timeout and cancellation guarantees.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 
 #include <chrono>

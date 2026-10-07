@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PC Tool Mode
+ *
+ * Mode parsing and confirmation frame validation.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/protocol/pctool.h>
 
 #include <array>

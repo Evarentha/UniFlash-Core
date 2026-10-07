@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / BootROM Reconnect
+ *
+ * Covers EXEC, DDR, RAM completion and keep-charge fault paths.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/device/sprd_device.h>
 #include <uniflash/device/chip_uid.h>
 #include <algorithm>

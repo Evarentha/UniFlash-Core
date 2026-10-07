@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Authentication Types
+ *
+ * Responder and key callbacks for the R27 device authentication exchange.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <cstdint>
 #include <expected>

@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / Transport Ownership
+ *
+ * Covers enumeration provenance, event context use and sensitive flag moves.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/transport/usb.h>
 #include <array>
 #include <cstdio>

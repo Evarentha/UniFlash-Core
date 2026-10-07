@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PC Tool Mode
+ *
+ * PC mode values and confirmation frame decoding.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #ifndef UNIFLASH_PROTOCOL_PCTOOL_H
 #define UNIFLASH_PROTOCOL_PCTOOL_H
 

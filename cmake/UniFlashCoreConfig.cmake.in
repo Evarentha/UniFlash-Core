@@ -1,3 +1,13 @@
+#
+# UniFlash-Core Package Configuration
+#
+# Resolves dependencies and exports the UniFlash::Core imported target.
+#
+# Authors:
+# worryzu <worryzu@gmail.com> @LinearTeam
+#
+# Copyright (C) 2026 Evarentha
+# SPDX-License-Identifier: Apache-2.0
 @PACKAGE_INIT@
 
 include(CMakeFindDependencyMacro)

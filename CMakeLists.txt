@@ -1,3 +1,13 @@
+#
+# UniFlash-Core Build Definition
+#
+# Declares the core library, the executable, the regression targets and the install rules.
+#
+# Authors:
+# worryzu <worryzu@gmail.com> @LinearTeam
+#
+# Copyright (C) 2026 Evarentha
+# SPDX-License-Identifier: Apache-2.0
 cmake_minimum_required(VERSION 3.28)
 project(UniFlash-Core VERSION 1.0.0 LANGUAGES CXX)
 
@@ -257,6 +267,10 @@ endif()
 install(TARGETS uniflash-core
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+# Apache-2.0 redistribution requires the license text to accompany the
+# binary and library artifacts.
+install(FILES LICENSE
+    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/licenses/UniFlashCore")
 install(TARGETS uniflash_core EXPORT UniFlashCoreTargets
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})

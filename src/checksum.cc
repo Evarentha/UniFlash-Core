@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / CRC-32
+ *
+ * Table driven CRC-32 matching the sparse image definition.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/io/checksum.h>
 #include <array>
 namespace uniflash::io {

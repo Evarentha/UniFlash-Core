@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Boot Image Header
+ *
+ * Header bounds, declared hash and payload size validation.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/boot_image.h>
 #include <uniflash/io/sha256.h>
 #include <array>

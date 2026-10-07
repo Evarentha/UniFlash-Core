@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PAC Archive
+ *
+ * Archive entry classification and the local PAC reader interface.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/io/image.h>
 #include <string>

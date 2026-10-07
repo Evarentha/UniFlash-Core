@@ -1,3 +1,14 @@
+<!--
+UniFlash-Core Command Reference
+
+Command syntax, defaults, limits and plan formats.
+
+Authors:
+worryzu <worryzu@gmail.com> @LinearTeam
+
+Copyright (C) 2026 Evarentha
+SPDX-License-Identifier: Apache-2.0
+-->
 # Additional Command Reference
 
 Command details for UniFlash-Core 1.0.0. `<…>` denotes a required argument; `[…]` denotes an optional argument. Addresses accept decimal or `0x` hexadecimal notation.

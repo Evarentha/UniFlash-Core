@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Sparse Image Index
+ *
+ * Extent table and structural validation for sparse images.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/io/image.h>
 #include <array>

@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Command Argument Parsing
+ *
+ * Splits and quotes command lines into tokens for the dispatcher.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <istream>
 #include <string>

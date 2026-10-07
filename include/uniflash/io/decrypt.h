@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Image Decryption
+ *
+ * LP64 producer AES payload decryption for encrypted images.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/io/image.h>
 #include <string_view>

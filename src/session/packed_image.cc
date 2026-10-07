@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Packed Image Formats
+ *
+ * SCI1 directory, modem range and verification view parsing.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/packed_image.h>
 #include <uniflash/session/signed_image.h>
 #include <uniflash/io/output.h>

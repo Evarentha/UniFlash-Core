@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / Log Progress
+ *
+ * Covers progress line behaviour on a real pseudo terminal.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/log.h>
 
 #include <cerrno>

@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Windows Overlapped I/O
+ *
+ * Named pipe overlapped transfer helper used by the Windows transport.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #ifndef UNIFLASH_WINDOWS_IO_H
 #define UNIFLASH_WINDOWS_IO_H
 

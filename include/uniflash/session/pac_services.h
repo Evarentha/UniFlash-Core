@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PAC Services
+ *
+ * Compiled plans and the PAC execution service.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/session/flash_plan.h>
 #include <uniflash/session/pac_archive.h>

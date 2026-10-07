@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / Restore Manifest
+ *
+ * Covers strict manifest parsing and rejected inputs.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/restore_manifest.h>
 #include "temp_directory.h"
 #include <fstream>

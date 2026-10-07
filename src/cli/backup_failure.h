@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Backup Failure Reporting
+ *
+ * Keeps the primary failure when the manifest commit also fails.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/session/journal.h>
 

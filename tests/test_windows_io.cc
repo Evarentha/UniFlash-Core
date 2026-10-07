@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / Windows Overlapped I/O
+ *
+ * Covers the named pipe connection race, timeout and cancellation.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include "../src/transport/windows_io.h"
 #include <array>
 #include <future>

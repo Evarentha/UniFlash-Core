@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Flash Plan
+ *
+ * Committed plans for PAC execution, NV restore and address writes.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/device/sprd_device.h>
 #include <uniflash/io/image.h>

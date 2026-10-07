@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Raw Backup
+ *
+ * User area and hardware boot backup plans and entries.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/session/gpt.h>
 #include <uniflash/session/operation_result.h>

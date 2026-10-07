@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Disk Layout Verification
+ *
+ * GPT parsing and cross-checks against a reader.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/layout/disk_layout.h>
 #include <uniflash/io/checksum.h>
 #include <algorithm>

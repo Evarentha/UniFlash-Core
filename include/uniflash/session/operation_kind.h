@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Operation Description
+ *
+ * Address targets, write actions and plan steps.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <string>
 #include <string_view>

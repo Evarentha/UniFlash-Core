@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Raw Image Contract
+ *
+ * Byte-preserving validation for ordinary and temporary alias writes.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/io/stream.h>
 #include <uniflash/device/profile.h>

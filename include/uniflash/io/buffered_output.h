@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Buffered Disk Writer
+ *
+ * Bounded producer and consumer queue that separates device reads from disk writes.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/io/output.h>
 #include <condition_variable>

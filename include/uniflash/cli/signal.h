@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Interrupt Handling
+ *
+ * Stop token rotation, second-interrupt latching and termination requests.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #ifndef UNIFLASH_CLI_SIGNAL_H
 #define UNIFLASH_CLI_SIGNAL_H
 

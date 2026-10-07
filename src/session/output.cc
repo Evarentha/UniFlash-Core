@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Atomic Output File
+ *
+ * Temporary file creation, durable replacement and cleanup.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/io/output.h>
 #include <uniflash/platform.h>
 #include <algorithm>

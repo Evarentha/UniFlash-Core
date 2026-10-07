@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Sparse Decoder
+ *
+ * Android sparse decoding with chainable CRC-32 verification.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #ifndef UNIFLASH_SESSION_SPARSE_H
 #define UNIFLASH_SESSION_SPARSE_H
 

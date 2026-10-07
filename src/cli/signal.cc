@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Interrupt Handling
+ *
+ * Signal handlers and stop token rotation on both platforms.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/cli/signal.h>
 
 #include <atomic>

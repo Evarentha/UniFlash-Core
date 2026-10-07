@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Boot Stage
+ *
+ * Boot stage enumeration and its display names.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #ifndef UNIFLASH_DEVICE_STAGE_H
 #define UNIFLASH_DEVICE_STAGE_H
 

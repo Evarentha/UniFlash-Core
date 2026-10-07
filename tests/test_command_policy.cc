@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / Command Policy
+ *
+ * Covers command availability per stage and argument validation.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/cli/commands.h>
 
 #include <array>

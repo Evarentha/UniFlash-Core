@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Operations Facade
+ *
+ * Public convenience entry points for preparation, persistence and writes.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/session/flash_plan.h>
 

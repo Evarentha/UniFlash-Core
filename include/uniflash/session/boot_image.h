@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Boot Image Header
+ *
+ * sys_img_header validation of bounds and the declared payload hash.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/io/stream.h>
 namespace uniflash::session {

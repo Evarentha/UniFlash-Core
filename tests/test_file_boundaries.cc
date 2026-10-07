@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / File Boundaries
+ *
+ * Covers output path pinning, cleanup and non-regular input rejection.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/io/image.h>
 #include <uniflash/io/output.h>
 #include <uniflash/log.h>

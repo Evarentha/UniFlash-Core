@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / PAC Archive
+ *
+ * Local archive parsing, validation and entry lookup.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/pac_archive.h>
 #include <uniflash/session/pac_parser.h>
 #include <uniflash/session/pac_table.h>

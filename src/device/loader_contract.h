@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Loader Contract
+ *
+ * Externally established loader facts that override automatic defaults.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/device/profile.h>
 #include <uniflash/io/sha256.h>

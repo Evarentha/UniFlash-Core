@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Device Error Mapping
+ *
+ * Builds operation errors from reply evidence and caught exceptions.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <uniflash/session/operation_result.h>
 #include <uniflash/device/sprd_device.h>

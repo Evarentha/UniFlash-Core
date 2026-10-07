@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Sparse Decoder
+ *
+ * Sparse chunk decoding into a caller supplied sink.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/sparse.h>
 #include <uniflash/session/sparse_memory_sink.h>
 #include <uniflash/io/sparse_index.h>

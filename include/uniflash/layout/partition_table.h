@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Partition Table Build
+ *
+ * Partition specifications and MBR or GPT table construction.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #pragma once
 #include <cstdint>
 #include <expected>

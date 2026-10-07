@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Physical Access
+ *
+ * Binds verified GPT geometry to a connection for raw ranges.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/physical_access.h>
 #include <algorithm>
 namespace uniflash::session {

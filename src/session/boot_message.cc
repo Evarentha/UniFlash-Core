@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core / Boot Message
+ *
+ * BCB rewriting that preserves stage, reserved and A/B metadata.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/session/boot_message.h>
 
 #include <algorithm>

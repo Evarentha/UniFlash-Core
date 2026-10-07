@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / SHA-256
+ *
+ * Covers known answers and incremental updates.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/io/sha256.h>
 #include <algorithm>
 #include <uniflash/log.h>

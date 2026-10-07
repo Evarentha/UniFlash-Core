@@ -1,3 +1,14 @@
+/*
+ * UniFlash-Core Test / Erase Interruption
+ *
+ * Covers cancellation during erase and directory restore.
+ *
+ * Authors:
+ * worryzu <worryzu@gmail.com> @LinearTeam
+ *
+ * Copyright (C) 2026 Evarentha
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <uniflash/cli/signal.h>
 #include <stdexcept>
 
