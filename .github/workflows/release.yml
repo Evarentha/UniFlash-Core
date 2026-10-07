@@ -1,0 +1,131 @@
+#
+# UniFlash-Core Release Workflow
+#
+# Builds both platforms from a tag and publishes the release assets.
+#
+# Authors:
+# worryzu <worryzu@gmail.com> @LinearTeam
+#
+# Copyright (C) 2026 Evarentha
+# SPDX-License-Identifier: Apache-2.0
+
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag to rebuild and publish
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  linux:
+    name: Linux x86_64
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pkg-config libusb-1.0-0-dev libssl-dev
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+      - name: Record build environment
+        run: |
+          c++ --version | head -1
+          cmake --version | head -1
+          grep BUILD_ID build/generated/uniflash/version.h
+      - name: Build
+        run: cmake --build build --parallel 4
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
+      - name: Stage assets
+        run: |
+          mkdir -p dist
+          cp build/uniflash-core dist/uniflash-core-linux-x86_64
+          cp build/libuniflash_core.a dist/libuniflash_core-linux-x86_64.a
+      - uses: actions/upload-artifact@v7
+        with:
+          name: linux
+          path: dist/
+          if-no-files-found: error
+
+  windows:
+    name: Windows x86_64
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+      # Reproduce the pinned cross toolchain exactly: the download script
+      # fixes both the release and its SHA-256.
+      - name: Fetch LLVM-MinGW
+        run: |
+          output=$(cmake -P cmake/fetch-llvm-mingw.cmake)
+          printf '%s\n' "$output"
+          root=$(printf '%s\n' "$output" | sed -n 's/^-- LLVM_MINGW_ROOT=//p')
+          test -n "$root"
+          echo "LLVM_MINGW_ROOT=$root" >> "$GITHUB_ENV"
+      - name: Configure
+        run: >-
+          cmake -S . -B build-win -G Ninja
+          -DCMAKE_TOOLCHAIN_FILE=cmake/llvm-mingw.cmake
+          -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+      - name: Record build environment
+        run: |
+          "$LLVM_MINGW_ROOT/bin/x86_64-w64-mingw32-clang++" --version | head -1
+          cmake --version | head -1
+          grep BUILD_ID build-win/generated/uniflash/version.h
+      - name: Build
+        run: cmake --build build-win --parallel 4
+      - name: Stage assets
+        run: |
+          mkdir -p dist
+          cp build-win/uniflash-core.exe dist/uniflash-core-win-x86_64.exe
+          cp build-win/libuniflash_core.a dist/libuniflash_core-win-x86_64.a
+      - uses: actions/upload-artifact@v7
+        with:
+          name: windows
+          path: dist/
+          if-no-files-found: error
+
+  release:
+    name: Publish
+    needs: [linux, windows]
+    runs-on: ubuntu-24.04
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: dist
+          merge-multiple: true
+      - name: Checksums
+        working-directory: dist
+        run: |
+          sha256sum uniflash-core-linux-x86_64 libuniflash_core-linux-x86_64.a \
+            uniflash-core-win-x86_64.exe libuniflash_core-win-x86_64.a > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+      # No checkout in this job, so name the repository explicitly for gh.
+      - name: Publish assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ github.event.inputs.tag || github.ref_name }}
+        run: |
+          gh release view "$TAG" > /dev/null 2>&1 ||
+            gh release create "$TAG" --title "UniFlash-Core ${TAG#v}" --verify-tag --notes-from-tag
+          gh release upload "$TAG" dist/* --clobber
+          gh release view "$TAG" --json assets --jq '.assets[].name'
