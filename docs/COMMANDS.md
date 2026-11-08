@@ -217,7 +217,7 @@ On Ctrl+C during directory restore, the active alias transaction restores the GP
 
 Single-partition `restore-raw` requires a raw byte snapshot exactly as long as the physical target partition. Android sparse is rejected, and BTHD data is checked against the corresponding alias-write rules.
 
-Directory restore reads a `raw-partition-backup-v1/v2/v3` manifest. The backup must be complete, without recorded coverage limitations, and file lengths, sources, and partition coverage must agree. For version 3 manifests, restoration also verifies image and GPT evidence SHA-256 digests. The current alias backend requires eMMC with 512-byte sectors and a 128-entry GPT, with disk capacity and partition layout matching the backup.
+Directory restore reads a `raw-partition-backup-v1/v2/v3` manifest. The backup must be complete, without recorded coverage limitations, and file lengths, sources, and partition coverage must agree. For version 3 manifests, restoration also verifies image and GPT block SHA-256 digests. The current alias backend requires eMMC with 512-byte sectors and a 128-entry GPT, with disk capacity and partition layout matching the backup.
 
 Directory restoration validates and freezes all sources before checking device geometry and saving current device data. Single-partition preparation first reads the target geometry to establish the required snapshot length. Original contents are checked again before submission to detect changes since preparation. Recovery data is saved in a new directory outside the source backup; allow disk space for frozen inputs, original partition backups, and frozen copies of those backups.
 
@@ -244,8 +244,8 @@ The CLI prints a new recovery directory before execution:
 | File or directory | Purpose |
 |---|---|
 | `before-partition.bin` | Original complete target bytes for a single physical restore |
-| `original-gpt-header.bin`, `original-gpt-entries.bin` | Original primary GPT evidence |
-| `original-backup-gpt-header.bin`, `original-backup-gpt-entries.bin` | Backup GPT evidence for physical restoration |
+| `original-gpt-header.bin`, `original-gpt-entries.bin` | Original primary GPT image bytes |
+| `original-backup-gpt-header.bin`, `original-backup-gpt-entries.bin` | Backup GPT image bytes for physical restoration |
 | `restore-layout.xml`, `restore-table.bin` | Original names/geometry represented in the loader's recovery dialect |
 | `execution.txt` | Individual physical transaction state |
 | `plan.txt`, `directory-execution.txt`, numbered subdirectories | Directory order, overall state, and each partition's recovery material |

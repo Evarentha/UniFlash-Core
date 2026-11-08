@@ -20,7 +20,7 @@ The program communicates through the BootROM / FDL download protocol. A typical 
 
 Backups include partition images, layout information, and SHA-256 manifests. Writes accept individual images, XML plans, image directories, and PAC packages. Dedicated NV operations restore primary/backup data or merge items according to PAC configuration; physical restoration uses temporary GPT aliases. Offline commands decrypt images, extract SCI1 payloads, and generate Sansa verification views.
 
-This guide describes version 1.0.0, tagged `v1.0.0`.
+Target specifications correspond to core release `v1.0.0`.
 
 ## Building
 
